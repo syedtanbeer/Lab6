@@ -10,9 +10,13 @@
 
 * Open a browser on your host computer and browse to http://VIRTUAL\_MACHINE\_IP/ and fill out the form  with username='user' and password='password'
 
-* Observe the value set by the cookie.
+* On the "motd" page, submit a text string to set the "message of the day".
 
-* On your local machine, load the malicious.html file in the browser window.
+* Observe the value set on the new page.
+
+* On your local machine, load the malicious.html file and change the <code>src</code> attribute of the img take to point to the IP address of your virtual machine.
+
+* Load the malicious.html file on your host machine. This will simulate visiting a page on a separate domain which explots the CSRF vulnerability.
 
 * Navigate back to http://VIRTUAL\_MACHINE\_IP/motd.php and observe the change.
 
