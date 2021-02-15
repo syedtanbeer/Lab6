@@ -3,7 +3,7 @@
 ## Building the example
 
 * Clone this git repository
-* Run <code>docker-compose build && docker-compose up</code> Note this may take a couple minutes the first time. It will be faster on subsequent executions since docker will cache the packages that the php container uses.
+* Navigate to Lab6 and run <code>docker-compose build && docker-compose up</code> Note this may take a couple minutes the first time. It will be faster on subsequent executions since docker will cache the packages that the php container uses.
 * Copy the code from 'malicious.html' into an html file on your host computer.
 
 ## Demo Process
@@ -16,7 +16,7 @@
 
 * On your local machine, load the malicious.html file and change the <code>src</code> attribute of the img take to point to the IP address of your virtual machine.
 
-* Load the malicious.html file on your host machine. This will simulate visiting a page on a separate domain which explots the CSRF vulnerability.
+* Load the malicious.html file on your host machine. This will simulate visiting a page on a separate domain which exploits the CSRF vulnerability.
 
 * Navigate back to http://VIRTUAL\_MACHINE\_IP/motd.php and observe the change.
 
