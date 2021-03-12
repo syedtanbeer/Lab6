@@ -4,7 +4,7 @@
 
 * Clone this git repository
 * Navigate to Lab6 and run <code>docker-compose build && docker-compose up</code> Note this may take a couple minutes the first time. It will be faster on subsequent executions since docker will cache the packages that the php container uses.
-* Copy the code from 'malicious.html' into an html file on your host computer.
+* Copy the code from 'malicious.php' into an html file on your host computer.
 
 ## Demo Process
 
